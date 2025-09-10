@@ -5,6 +5,6 @@ if [ "$1" = "" ]; then
 else
     for ARG in "$@"
         do
-            touch ex$ARG
+            touch ex05/ex$ARG
         done
 fi
