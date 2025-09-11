@@ -8,7 +8,7 @@
 <body>
     <table>
         <tr>
-            <td style="border:2px solid black; background-color: pink; width: 400px; height: 200px;">
+            <td style="border:2px solid black; background-color: pink; width: 400px; height: 200px">
                 Dog
             </td>
             <td style="border:2px solid black; background-color: yellow; width: 400px; height: 200px;">
@@ -18,7 +18,17 @@
     </table>
 
     <style>
-        
+        html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%; 
+        width: 100%;
+        overflow: hidden; /* Prevent scrollbars if content overflows slightly */
+    }
+        table {
+            width: 100%;
+            height: 100%;
+        }
     </style>
     
 </body>
