@@ -1,0 +1,59 @@
+/* .btn {
+    background-color: rgb(216, 216, 216);
+    color: black;
+    border: 0px solid black;
+    border-radius: 3px;
+    width: fit-content;
+    padding: 5px 10px;
+    font-size: large;
+
+    /* width: 100%; */
+    
+/* } */ */
+
+.drop {
+    position: relative;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: aquamarine;
+}
+
+.dropdown-content{
+    display: none;
+    position: initial;
+    background-color: rgb(216, 216, 216);
+    border-width: 100%;
+    /* position: absolute; ทำให้ลอยเหนือเนื้อหาอื่น */
+    color: black;
+    padding: auto;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    
+    
+    /* padding: #px #px; */
+    /* text-decoration: none; */
+    
+}
+
+.drop:hover .dropdown-content{
+    display: block;
+    color: black;
+    /* height: 100%;
+    width: 100% */
+
+}
+
+.dropdown-content:hover {
+    color: blue;
+}
+/* 
+button.list .btn {
+    display: inline-block;
+    padding: 0 0.5rem;
+    min-width: 12rem;
+    text-align: center;
+} */
+

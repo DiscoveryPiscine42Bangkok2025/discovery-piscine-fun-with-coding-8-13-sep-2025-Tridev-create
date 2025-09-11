@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-card {
+    width: 350px;
+    background-color: rgb(160, 0, 0);
+    border-radius: 10px; /* ทำให้ขอบมน */
+    overflow: hidden; /* ป้องกันไม่ให้รูปภาพทะลุขอบมน */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* ★ หัวใจของการทำให้การ์ดดูลอย */
+    text-align: center; /* จัดให้ทุกอย่างอยู่กึ่งกลาง */
+    top: 50%;
+    left: 50%;
+    padding-bottom: 0px;
+    /* transform: translate(-50%, -50%); */
+}
+
+.profile-img {
+    display: block;
+    padding-top: 15px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.profile-name {
+    font-family:monospace;
+    font-size: 25px;
+    padding: 0px;
+}
+
+.profile-info {
+    font-family: monospace;
+    font-size: 15px;
+}
+.icon {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.icon ul {
+    display: flex;
+    justify-content: center;
+}
+
+.icon i {
+    justify-content: center;
+    /* padding-right: 10px; */
+}
+
+.icon li {
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+    justify-content: center;
+
+}
+
+.btn {
+    width: 350px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+    border: 0px;
+
+}
+
+.btn:hover {
+    background-color: rgb(255, 255, 255);
+}

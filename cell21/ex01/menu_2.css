@@ -1,0 +1,94 @@
+/* --- เริ่มต้นการ Reset ค่าพื้นฐาน --- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* ตั้งค่าฟอนต์ */
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* เอากระสุนหน้า list ออก */
+}
+
+
+/* --- 1. สไตล์แถบนำทางหลัก (nav) --- */
+.main-nav {
+    background-color: #55a8de; /* สีพื้นหลังของแถบเมนู */
+}
+
+
+/* --- 2. จัดการ list (ul) ให้เรียงแนวนอนด้วย Flexbox --- */
+.main-nav ul {
+    display: flex; /* ★ คำสั่งสำคัญ: ทำให้ li เรียงกันแนวนอน */
+    justify-content: center; /* ★ จัดให้เมนูทั้งหมดอยู่กึ่งกลาง */
+}
+
+
+/* --- 3. สไตล์ของลิงก์แต่ละตัว (a) --- */
+.main-nav a {
+    display: block; /* ทำให้ padding ทำงานได้เต็มพื้นที่ */
+    padding: 15px 20px; /* เพิ่มระยะห่างภายในปุ่ม (บน-ล่าง 15px, ซ้าย-ขวา 20px) */
+    color: white; /* สีตัวอักษร */
+    text-decoration: none; /* เอาเส้นใต้ลิงก์ออก */
+    font-size: 16px;
+}
+
+
+/* --- 4. สร้างเส้นคั่นระหว่างเมนู (li) --- */
+/* เลือก li ทุกอัน "ยกเว้น" อันแรก */
+.main-nav li + li {
+    border-left: 1px solid rgba(255, 255, 255, 0.5); /* สร้างเส้นขอบซ้ายสีขาวโปร่งแสง */
+}
+
+
+/* --- 5. เพิ่มเอฟเฟกต์เมื่อเมาส์ชี้ (hover) --- */
+.main-nav a:hover {
+    background-color: #4a9ad6; /* เปลี่ยนสีพื้นหลังเมื่อเมาส์ชี้ */
+}
+
+.main-nav a:hover .dropdown_content td {
+    display: block;
+}
+
+.drop {
+    position: relative;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    padding: 15px 20px; /* เพิ่มระยะห่างภายในปุ่ม (บน-ล่าง 15px, ซ้าย-ขวา 20px) */
+    color: white; /* สีตัวอักษร */
+    text-decoration: none; /* เอาเส้นใต้ลิงก์ออก */
+    font-size: 16px;
+}
+
+.dropdown_content a {
+    display: none;
+    /* position: absolute; */
+    padding: 15px 15px; /* เพิ่มระยะห่างภายในปุ่ม (บน-ล่าง 15px, ซ้าย-ขวา 20px) */
+    color: white; /* สีตัวอักษร */
+    text-decoration: none; /* เอาเส้นใต้ลิงก์ออก */
+    font-size: 16px;
+    background-color: #4a9ad6;
+    border-bottom: 0.5px solid silver;
+    border-radius: 5px;
+    width: 100%;
+    text-align: left;
+}
+
+
+
+.drop:hover .dropdown_content {
+    display: block;
+
+}
+
+.drop:hover .dropdown_content a {
+    display: block;
+
+}
+
+.dropdown_content a:hover {
+    color: rgb(0, 26, 255);
+}
