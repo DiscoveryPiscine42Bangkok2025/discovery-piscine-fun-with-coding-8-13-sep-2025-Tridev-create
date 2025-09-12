@@ -1,0 +1,23 @@
+/* body {
+    background-color: #b80404;
+    color: #eee;
+    font-family: sans-serif;
+    padding: 20px;
+} */
+
+#colorButton {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#colorBox {
+    display: none; 
+    width: 400px;
+    height: 200px;
+    margin-top: 20px;
+    border: 2px solid black;
+}
+
+
+

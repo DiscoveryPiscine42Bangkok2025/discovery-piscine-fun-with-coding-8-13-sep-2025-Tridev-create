@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>เปลี่ยนสีพื้นหลัง</title>
+<style>
+  /* ตัวอย่าง: กำหนดความกว้างและความสูงให้ div เพื่อให้มองเห็นได้ */
+  #myDiv {
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 100px;
+    margin-bottom: 20px;
+  }
+</style>
+</head>
+<body>
+
+  <div id="myDiv">ฉันคือ Div</div>
+  <button onclick="changeBodyColor()">เปลี่ยนสีพื้นหลัง Body</button>
+  <button onclick="changeDivColor()">เปลี่ยนสีพื้นหลัง Div</button>
+
+  <script>
+    function changeBodyColor() {
+ 
+      document.body.style.backgroundColor = 'lightblue';
+    }
+
+    function changeDivColor() {
+
+      const divElement = document.getElementById('myDiv');
+      divElement.style.backgroundColor = '#ffcc00'; // สีเหลืองส้ม
+    }
+  </script>
+
+</body>
+</html>
