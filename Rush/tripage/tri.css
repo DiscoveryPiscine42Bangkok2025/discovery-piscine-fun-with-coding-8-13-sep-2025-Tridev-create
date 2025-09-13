@@ -1,0 +1,234 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: grid;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #1f2937;
+    justify-content: center;
+}
+
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+    .container {
+        /* max-width: 1100px; */
+        margin: 0 auto;
+        padding: 0 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: #1f2937;
+        }
+
+        .links {
+            a {
+                margin-left: 1.5rem;
+                text-decoration: none;
+                color: #ffffff;
+                font-weight: 500;
+                transition: color 0.3s ease;
+            }
+
+            a:hover {
+                color: #2563eb;
+                text-shadow: 3px 5px 15px rgb(0, 255, 251);
+                font-style:oblique;
+            }
+        }
+
+
+    }
+}
+
+.parallax-main {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        /* กำหนดขนาดและความสูง */
+        min-height: 100vh; /* ให้สูงเต็มหน้าจอ */
+        position: relative; /* สำหรับจัดตำแหน่งข้อความตรงกลาง */
+}
+
+.parallax-1 {
+    background-image: url("https://images.alphacoders.com/116/1169862.jpg"); /* <<< ใส่ URL รูปแรกของคุณที่นี่ */
+}
+
+.bg {
+    display: flex;
+    height: 50%;
+    background-color: black;
+    justify-content: center;
+    max-width: 1100px;
+    padding: 50px 50px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px rgb(255, 0, 208);
+
+
+}
+
+.bg-wrapper {
+        box-shadow: 0px 2px 15px rgb(255, 0, 208);
+    border-radius: 15px;
+    background-color: black;
+    color: white; /* กำหนดสีตัวอักษรให้เป็นสีขาว จะได้อ่านง่าย */
+    width: 100%;
+    padding: 60px 0; /* เพิ่มระยะห่างบน-ล่าง ตามความสวยงาม */
+    /* ไม่ต้องกำหนด width หรือ max-width ที่นี่! */
+}
+
+.about,
+.contact,
+.showcase {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        max-width: 1100px;
+        margin: 0 auto;
+        align-items: center;
+
+
+        .text {
+            .small-heading {
+                color: #2563eb;
+                font-size: 0.85rem;
+                letter-spacing: 1px;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+                font-weight: bold;
+                margin-bottom: 1rem;
+                margin-top: 0;
+                line-height: 1.3;
+            }
+
+            .description {
+                color: #4b5563;
+                line-height: 1.6;
+            }
+
+        }
+
+        .image img {
+            width: 18rem;
+            height: 18rem;
+            object-fit: cover;
+            border-radius: 50%;
+            border-color: pink;
+            /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); */
+            border: 2px solid white;
+            display: block;
+            margin: 0 auto;
+            box-shadow: 1px 3px 15px rgb(0, 247, 255);
+        }
+    }
+}
+
+.showcase {
+    .title {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .showcase-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        max-width: 1200px;
+        
+        margin: 0 auto;
+        /* padding: 50px 80px; */
+
+        .card {
+            background: rgb(255, 255, 255);
+            width: 100%;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+
+            h3 {
+                font-size: 1.25rem;
+                margin-bottom: 0.5rem;
+            }
+
+            p,
+            ul {
+                color: #ffffff;
+                line-height: 1.5;
+            }
+
+            li {
+                color: black;
+            }
+        }
+    }
+}
+
+.contact {
+    background-color: black;
+    box-shadow: 0px 2px 15px rgb(255, 0, 208);
+    max-height: 300px;
+    border-radius: 15px;
+    .title {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 2rem;
+        background-color: black;
+    }
+
+    p {
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 1rem;
+        /* background-color: black; */
+    }
+
+    .links {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+
+        a {
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #ffffff;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #2563eb;
+            /* text-shadow: 3px 5px 15px rgb(0, 255, 251); */
+            text-shadow: 3px 5px 15px rgb(0, 255, 251);
+            font-style:oblique;
+            /* font-variant: unset; */
+        }
+    }
+}
